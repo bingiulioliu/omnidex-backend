@@ -22,7 +22,7 @@ public class Universe {
 
     @Id 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private String id;
+    private Integer id;
 
     @Size (min = 3, max = 70, message = "Inserire un nome compreso tra 3 e 70 caratteri")
     @Column (nullable = false)

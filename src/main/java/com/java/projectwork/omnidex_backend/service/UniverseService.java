@@ -33,4 +33,21 @@ public class UniverseService {
         // }
         return universeRepository.save(universe);
     }
+
+    public Universe update (Universe universe, Integer id){
+        // Riutilizza findById
+        Universe universeAttempt = this.findById(id);
+
+        universeAttempt.setName(universe.getName());
+        universeAttempt.setDescription(universe.getDescription());
+
+        return universeRepository.save(universeAttempt);
+    }
+
+    public void deleteById (Integer id){
+        // Riutilizza findById
+        Universe universeAttemp = this.findById(id);
+
+        universeRepository.delete(universeAttemp);
+    }
 }

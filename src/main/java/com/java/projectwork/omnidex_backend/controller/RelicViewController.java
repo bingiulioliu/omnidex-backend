@@ -58,7 +58,7 @@ public class RelicViewController {
         Relic relic = relicService.findById(id);
         model.addAttribute("relic", relic);
 
-        return "/relics/relicDetail";
+        return "relics/relicDetail";
     }
 
     // CREATE
@@ -69,7 +69,7 @@ public class RelicViewController {
         model.addAttribute("categories", categoryService.findAll());
         model.addAttribute("universes", universeService.findAll());
 
-        return "/relics/create-or-edit";
+        return "relics/create-or-edit";
     }
 
     @PostMapping ("/create")

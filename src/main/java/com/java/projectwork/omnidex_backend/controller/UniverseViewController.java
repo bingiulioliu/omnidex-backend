@@ -35,22 +35,22 @@ public class UniverseViewController {
     public String index (Model model){
         List<Universe> universes = universeService.findAll();
         model.addAttribute("universes", universes);
-        return "/universes/index";
+        return "universes/index";
     }
 
     // SHOW
-    @GetMapping ("/universes/{id}")
+    @GetMapping ("/{id}")
     public String show (@PathVariable ("id") Integer id, Model model){
         Universe universe = universeService.findById(id);
         model.addAttribute("universe", universe);
-        return "/universes/universeDetail";
+        return "universes/universeDetail";
     }
 
     // CREATE (FORM)
     @GetMapping ("/create")
     public String create (Model model){
         model.addAttribute("universe", new Universe());
-        return "/universes/create-or-edit";
+        return "universes/create-or-edit";
     }
 
     // STORE

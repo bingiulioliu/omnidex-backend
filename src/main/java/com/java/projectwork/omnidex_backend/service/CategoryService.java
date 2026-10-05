@@ -36,7 +36,6 @@ public class CategoryService {
 
         categoryAttemp.setName(category.getName());
         categoryAttemp.setDescription(category.getDescription());
-        categoryAttemp.setInconKey(category.getInconKey());
 
         return categoryRepository.save(categoryAttemp);
     }

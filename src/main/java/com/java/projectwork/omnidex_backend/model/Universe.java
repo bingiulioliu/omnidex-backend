@@ -10,7 +10,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
@@ -34,7 +33,6 @@ public class Universe {
 
     // Relazione 1:N con Relic
     @OneToMany  (mappedBy = "universe", cascade = CascadeType.REMOVE)
-    @JoinColumn
     @JsonIgnore 
     private List<Relic> relics;
 

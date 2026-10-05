@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -31,11 +29,6 @@ public class Category {
 
     @NotBlank(message = "Inserire una descrizione")
     private String description;
-
-    // Nome per l'icona dinamica da passare a React
-    @Enumerated (EnumType.STRING)
-    @NotBlank (message = "Inserire una chiave per l'icona")
-    private String inconKey;
 
     // Relazione N:N con Relic
     @ManyToMany (mappedBy = "categories")
@@ -65,14 +58,6 @@ public class Category {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getInconKey() {
-        return inconKey;
-    }
-
-    public void setInconKey(String inconKey) {
-        this.inconKey = inconKey;
     }
 
     public List<Relic> getRelics() {

@@ -1,7 +1,6 @@
 package com.java.projectwork.omnidex_backend.service;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -42,6 +41,41 @@ public class RelicService {
         return relicRepository.findById(id)
             .orElseThrow(() -> new RelicNotFoundException("Reliquia con ID: " + id + " non trovata."));
         
+    }
+
+    public Relic create (Relic relic){
+
+        // Check se esiste già una reliquia con lo stesso nome
+        if (relicRepository.existsByNameIgnoreCase(relic.getName().trim())){
+            throw new IllegalArgumentException("Esiste già una reliqui dal nome: " + relic.getName());
+        }
+
+        return relicRepository.save(relic);
+    }
+
+    public Relic update (Integer id, Relic relic){
+
+        // riutilizzo findById
+        Relic relicAttempt = this.findById(id);
+
+        // Copio i dati da relic a relicAttempt
+        relicAttempt.setName(relic.getName());
+        relicAttempt.setDescription(relic.getDescription());
+        relicAttempt.setImgUrl(relic.getImgUrl());
+        relicAttempt.setCategories(relic.getCategories());
+        relicAttempt.setUniverse(relic.getUniverse());
+
+        // Salvo l'oggetto aggiornato
+        return relicRepository.save(relicAttempt);
+            
+    }
+
+    public void deleteById(Integer id){
+
+        // Check se la reliquia esiste
+        Relic relicAttempt = this.findById(id);
+
+        relicRepository.delete(relicAttempt);
     }
 
 }

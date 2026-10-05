@@ -25,7 +25,7 @@ public class Universe {
     private Integer id;
 
     @Size (min = 3, max = 70, message = "Inserire un nome compreso tra 3 e 70 caratteri")
-    @Column (nullable = false)
+    @Column (nullable = false, unique = true)
     @NotBlank 
     private String name;
 

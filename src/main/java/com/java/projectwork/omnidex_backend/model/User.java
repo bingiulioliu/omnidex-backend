@@ -2,6 +2,7 @@ package com.java.projectwork.omnidex_backend.model;
 
 import java.util.Set;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -23,6 +24,7 @@ public class User {
 
     @NotBlank (message = "L'username non può essere vuoto")
     @Size (min = 3, message = "L'username deve avere almeno 3 caratteri")
+    @Column (nullable = false, unique = true)
     private String username;
 
     @NotBlank (message = "La password non può essere vuota")

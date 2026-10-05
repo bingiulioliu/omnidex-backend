@@ -24,7 +24,7 @@ public class Relic {
     private Integer id;
 
     @Size (max = 70, message = "Inserire massimo 70 caratteri")
-    @Column (nullable = false)
+    @Column (nullable = false, unique = true)
     @NotBlank
     private String name;
 

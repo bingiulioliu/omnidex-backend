@@ -4,6 +4,7 @@ import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -21,6 +22,7 @@ public class Role {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column (nullable = false, unique = true)
     @NotBlank 
     @Size (min = 4, message = "Il nome del ruole deve contenere almeno 4 caratteri")
     private String name;

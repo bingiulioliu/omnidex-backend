@@ -6,25 +6,15 @@ import org.springframework.stereotype.Service;
 
 import com.java.projectwork.omnidex_backend.exception.RelicNotFoundException;
 import com.java.projectwork.omnidex_backend.model.Relic;
-import com.java.projectwork.omnidex_backend.repository.CategoryRepository;
 import com.java.projectwork.omnidex_backend.repository.RelicRepository;
-import com.java.projectwork.omnidex_backend.repository.UniverseRepository;
 
 @Service 
 public class RelicService {
     
     private final RelicRepository relicRepository;
-    private final CategoryRepository categoryRepository;
-    private final UniverseRepository universeRepository;
 
-    public RelicService (
-        RelicRepository relicRepository,
-        CategoryRepository categoryRepository,
-        UniverseRepository universeRepository
-    ) {
+    public RelicService (RelicRepository relicRepository) {
         this.relicRepository = relicRepository;
-        this.categoryRepository = categoryRepository;
-        this.universeRepository = universeRepository;
     }
 
     public List<Relic> findRelics(String name){

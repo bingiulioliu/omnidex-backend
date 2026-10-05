@@ -2,9 +2,6 @@ package com.java.projectwork.omnidex_backend.model;
 
 import java.util.List;
 
-import com.java.projectwork.omnidex_backend.model.Category;
-import com.java.projectwork.omnidex_backend.model.Universe;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -46,9 +43,10 @@ public class Relic {
     )
     private List<Category> categories;
 
-    // Relazione 1:N con Universe
-    @OneToMany (mappedBy = "relic")
-    private List<Universe> universes;
+    // Relazione N:1 con Universe
+    @ManyToOne
+    @JoinColumn (name = "universe_id", nullable = false)
+    private Universe universe;
 
     // Getter e Setter
     public Integer getId() {
@@ -91,12 +89,13 @@ public class Relic {
         this.categories = categories;
     }
 
-    public List<Universe> getUniverses() {
-        return universes;
+    public Universe getUniverse() {
+        return universe;
     }
 
-    public void setUniverses(List<Universe> universes) {
-        this.universes = universes;
+    public void setUniverse(Universe universe) {
+        this.universe = universe;
     }
+
 
 }

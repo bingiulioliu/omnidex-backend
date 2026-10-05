@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.java.projectwork.omnidex_backend.exception.RelicNotFoundException;
+import com.java.projectwork.omnidex_backend.exception.ResourceNotFoundException;
 import com.java.projectwork.omnidex_backend.model.Relic;
 import com.java.projectwork.omnidex_backend.repository.RelicRepository;
 
@@ -29,17 +29,17 @@ public class RelicService {
 
     public Relic findById(Integer id){
         return relicRepository.findById(id)
-            .orElseThrow(() -> new RelicNotFoundException("Reliquia con ID: " + id + " non trovata."));
+            .orElseThrow(() -> new ResourceNotFoundException("Reliquia con ID: " + id + " non trovata."));
         
     }
 
     public Relic create (Relic relic){
-
-        // Check se esiste già una reliquia con lo stesso nome
-        if (relicRepository.existsByNameIgnoreCase(relic.getName().trim())){
-            throw new IllegalArgumentException("Esiste già una reliqui dal nome: " + relic.getName());
-        }
-
+        
+        // Tolto check se esiste nome per unique = true nella entity 
+        // if (relicRepository.existsByNameIgnoreCase(relic.getName().trim())){
+        //    throw new IllegalArgumentException("Esiste già una reliqui dal nome: " + relic.getName());
+        // }  
+        
         return relicRepository.save(relic);
     }
 

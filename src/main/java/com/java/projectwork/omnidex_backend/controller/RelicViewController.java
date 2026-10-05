@@ -72,7 +72,7 @@ public class RelicViewController {
         return "/relics/create-or-edit";
     }
 
-    @PostMapping 
+    @PostMapping ("/create")
     public String store (
         @Valid @ModelAttribute ("relic") Relic formRelic,
         BindingResult bindingResult,
@@ -89,7 +89,7 @@ public class RelicViewController {
         return "redirect:/relics";
     }
 
-    // UPDATE
+    // EDIT
     @GetMapping ("/edit/{id}")
     public String edit (@PathVariable Integer id, Model model){
 
@@ -115,7 +115,7 @@ public class RelicViewController {
 
         relicService.update(id, formRelic);
 
-        return "redirect:/relics" + id;
+        return "redirect:/relics/" + id;
     }
 
     @DeleteMapping ("/delete/{id}")

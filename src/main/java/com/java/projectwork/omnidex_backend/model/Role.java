@@ -24,7 +24,7 @@ public class Role {
 
     @Column (nullable = false, unique = true)
     @NotBlank 
-    @Size (min = 4, message = "Il nome del ruole deve contenere almeno 4 caratteri")
+    @Size (min = 3, message = "Il nome del ruole deve contenere almeno 3 caratteri")
     private String name;
 
     @ManyToMany (mappedBy = "roles", fetch = FetchType.EAGER)

@@ -38,8 +38,8 @@ public class Relic {
     @ManyToMany 
     @JoinTable (
         name = "category_relic",
-        joinColumns = @JoinColumn(name = "relic.id"),
-        inverseJoinColumns = @JoinColumn (name = "category.id")
+        joinColumns = @JoinColumn(name = "relic_id"),
+        inverseJoinColumns = @JoinColumn (name = "category_id")
     )
     private List<Category> categories;
 

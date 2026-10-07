@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Categorie - Omnidex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<!-- Fragment della navbar -->
+<header>
+    <div th:replace="~{fragments/fragments :: navbar(categories)}"></div>
+</header>
+
+<!-- Contenuto homepage -->
+<body>
+    <div class="container text-center py-3">
+        <h1>Categorie</h1>
+        <p class="lead">Esplora le categorie</p>
+    </div>
+
+    <!-- Lista reliquie -->
+    <div th:replace="~{fragments/fragments :: cardList(items=${categories}, showImage=false)}"></div>
+</body>
+</html>

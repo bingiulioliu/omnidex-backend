@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Home - Pizzeria</title>
+    <title>Home - Omnidex</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <!-- Fragment della navbar -->
 <header>
-    <div th:replace="~{fragments/fragments :: navbar(homepage)}"></div>
+    <div th:replace="~{fragments/fragments :: navbar(home)}"></div>
 </header>
 
 <!-- Contenuto homepage -->
 <body>
-        <div class="container text-center py-5">
+        <div class="container text-center py-3">
         <h1>Backoffice di Omnidex</h1>
         <p class="lead">Naviga gli archivi, crea, modifica o elimina i dati</p>
-        <a th:href="@{/relics}" class="btn btn-danger btn-lg mt-3">Vai alle Reliquie</a>
-        <a th:href="@{/universes}" class="btn btn-danger btn-lg mt-3">Vai agli Universi</a>
-        <a th:href="@{/categories}" class="btn btn-danger btn-lg mt-3">Vai alle Categorie</a>
+        <a th:href="@{/relics}" class="btn btn-secondary btn-lg mt-3">Vai alle Reliquie</a>
+        <a th:href="@{/universes}" class="btn btn-secondary btn-lg mt-3">Vai agli Universi</a>
+        <a th:href="@{/categories}" class="btn btn-secondary btn-lg mt-3">Vai alle Categorie</a>
     </div>
 </body>
 </html>

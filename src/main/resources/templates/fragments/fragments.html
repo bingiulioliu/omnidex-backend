@@ -49,11 +49,11 @@
 
 <body>
 
-        <!-- FRAGMENT ELENCO -->
-    <div th:fragment="cardList(items)" class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- FRAGMENT ELENCO -->
+    <div th:fragment="cardList(items, baseUrl, showImage)" class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col" th:each="item : ${items}">
             <div class="card h-100 shadow-sm">
-                <!-- Immagine presente solo per relics -->
+                <!-- Immagine presente solo se showImage = true -->
                 <img th:if="${showImage}"
                     th:src="${item.imgUrl}" 
                     class="card-img-top" 
@@ -69,13 +69,69 @@
                     <!-- Bottoni azione -->
                     <div class="d-flex justify-content-between align-items-center mt-2">
                         <div class="btn-group btn-group-sm ms-auto" role="group">
-                            <a th:href="@{/{items}/{id}(id=${item.id})}" class="btn btn-outline-primary btn-sm">Dettagli</a>
-                            <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/{items}/create-or-edit/{id}(id=${item.id})}"
+                            <a th:href="@{${baseUrl} + '/' + ${item.id}}" class="btn btn-outline-primary btn-sm">Dettagli</a>
+                            <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/{baseUrl}/create-or-edit/{id}(id=${item.id})}"
                                 class="btn btn-outline-secondary btn-sm">Modifica</a>
-                            <form sec:authorize="hasRole('ROLE_ADMIN')" th:action="@{/{items}/delete/{id}(id=${item.id})}" method="post" class="d-inline"
+                            <form sec:authorize="hasRole('ROLE_ADMIN')" th:action="@{/{baseUrl}/delete/{id}(id=${item.id})}" method="post" class="d-inline"
                                 th:onsubmit="return confirm('Sei sicuro di voler procedere con la eliminazione');">
                                 <button type="submit" class="btn btn-sm btn-danger">Elimina</button>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FRAGMENT DETTAGLIO -->
+    <div th:fragment="detail(item, baseUrl, showInfo)" class="card shadow-lg mx-3 my-4">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img th:if="${showInfo}"
+                th:src="${item.imgUrl}" 
+                class="img-fluid rounded-start h-100" 
+                th:alt="${item.name}"
+                style="object-fit: cover; min-height: 300px;">
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card-body p-4">
+                    <a th:href="@{${baseUrl}}" class="btn btn-secondary mb-3">← Torna indietro</a>
+                    <h2 class="card-title fw-bold mb-3" th:text="${item.name}">Nome item</h2>
+                    <p class="card-text fs-5 text-secondary mb-4" th:text="${item.description}">Descrizione item
+                    </p>
+                    
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <a th:href="@{${baseUrl} + '/' + '/create-or-edit/' + ${item.id}}"
+                            class="btn btn-outline-secondary btn-sm">Modifica</a>
+                        <form th:action="@{${baseUrl} + '/' + '/delete/' + ${item.id}}" method="post" class="d-inline"
+                            th:onsubmit="return confirm('Sei sicuro di voler procedere con la eliminazione');">
+                            <button type="submit" class="btn btn-sm btn-danger">Elimina</button>
+                        </form>
+                    </div>
+
+                    <!-- Lista categorie (solo per relics) -->
+                    <div th:if="${showInfo}"
+                        class="mt-4 pt-3 border-top">
+                        <h5 class="fw-bold mb-3">Categorie associate</h5>
+                        <div th:if="${#lists.isEmpty(relic.getCategories())}" class="text-muted small">
+                            Non ci sono offerte attive
+                        </div>
+                        <div th:unless="${#lists.isEmpty(relic.getCategories())}"
+                            class="d-flex justify-content-between align-items-center mt-3"
+                            th:each="category : ${relic.getCategories()}">
+                            <span class="btn btn-outline-success" th:text="${category.name}"></span>
+                        </div>
+                    </div>
+                    <!-- Universo di appartenenza (solo per relics) -->
+                    <div th:if="${showInfo}"
+                        class="mt-4 pt-3 border-top">
+                        <h5 class="fw-bold mb-3">Universo di appartenenza</h5>
+                        <div th:if="${relic.getUniverse() != null}" class="text-muted small">
+                            Non è ancora stato associato un universo
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3"
+                            th:text="${relic.getUniverse()}">
+                            <span class="btn btn-outline-success" th:text="${universe.name}"></span>
                         </div>
                     </div>
                 </div>

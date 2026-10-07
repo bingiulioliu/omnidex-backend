@@ -4,8 +4,8 @@ INSERT INTO roles (id, name) VALUES (2, 'ROLE_USER');
 
 -- Inserimento degli Utenti (La password per entrambi è "password" cifrata in BCrypt)
 -- Hash BCrypt di "password": $2a$10$8.UnVuG9HHgffUDAlk8qfOuVGkqRzgVymGe07xd0X1gZNu26x.2T2
-INSERT INTO users (id, username, password) VALUES (1, 'admin', '$2a$10$8.UnVuG9HHgffUDAlk8qfOuVGkqRzgVymGe07xd0X1gZNu26x.2T2');
-INSERT INTO users (id, username, password) VALUES (2, 'user', '$2a$10$8.UnVuG9HHgffUDAlk8qfOuVGkqRzgVymGe07xd0X1gZNu26x.2T2');
+INSERT INTO users (id, username, password) VALUES (1, 'admin', '{noop}password');
+INSERT INTO users (id, username, password) VALUES (2, 'user', '{noop}password');
 
 -- Associazione Utenti - Ruoli nella tabella ponte role_user
 -- L'admin ottiene sia ROLE_ADMIN sia ROLE_USER

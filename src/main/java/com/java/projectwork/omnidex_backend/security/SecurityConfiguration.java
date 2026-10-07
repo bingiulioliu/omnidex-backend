@@ -29,7 +29,7 @@ public class SecurityConfiguration {
             // Autorizzazioni
             .authorizeHttpRequests(auth -> auth
                 // Consento a tutti i guest l'accesso senza autorizzazione
-                .requestMatchers(HttpMethod.GET, "/api/relics/**").permitAll()
+                .requestMatchers(HttpMethod.GET,"/api/relics", "/api/relics/**").permitAll()
                 .anyRequest().authenticated()
             );
             
@@ -42,7 +42,7 @@ public class SecurityConfiguration {
     public SecurityFilterChain webSecurityFilterChain(HttpSecurity http) throws Exception{
         http
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/login", "/css/**", "/js/**", "/webjars/**").permitAll()
+                .requestMatchers("/login", "/error", "/css/**", "/js/**", "/webjars/**").permitAll()
                 // Accesso solo ADMIN
                 .requestMatchers(HttpMethod.POST, "/relics/**", "/categories/**", "/universes/**").hasAuthority("ADMIN")
                 .requestMatchers(HttpMethod.DELETE, "/relics/**", "/categories/**", "/universes/**").hasAuthority("ADMIN")

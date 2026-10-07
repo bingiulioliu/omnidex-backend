@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+</head>
+<header>
+        <!-- 1. FRAGMENT NAVBAR -->
+    <nav th:fragment="navbar(activePage)" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" th:href="@{/}">Omnidex backoffice</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" th:classappend="${activePage == 'home' ? 'active' : ''}"
+                            th:href="@{/}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:classappend="${activePage == 'relics' ? 'active' : ''}"
+                            th:href="@{/pizzas}">Reliquie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:classappend="${activePage == 'universes' ? 'active' : ''}"
+                            th:href="@{/ingredients}">Universi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:classappend="${activePage == 'categories' ? 'active' : ''}"
+                            th:href="@{/ingredients}">Categorie</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- MOSTRA IL FORM PER NON LOGGATI -->
+            <form sec:authorize="isAnonymous()" th:action="@{/login}" method="post" class="d-flex gap-2 ms-auto">
+                <input type="text" name="username" class="form-control form-control-sm" placeholder="Username"
+                    required />
+                <input type="password" name="password" class="form-control form-control-sm" placeholder="Password"
+                    required />
+                <button type="submit" class="btn btn-sm btn-outline-success">Login</button>
+            </form>
+
+            <!-- MOSTRA IL TASTO LOGOUT SE L'UTENTE È LOGGATO -->
+            <form sec:authorize="isAuthenticated()" th:action="@{/logout}" method="post" class="ms-auto">
+                <button type="submit" class="btn btn-sm btn-outline-danger">Logout</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+</body>
+</html>

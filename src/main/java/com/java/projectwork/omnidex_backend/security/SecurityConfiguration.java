@@ -44,11 +44,11 @@ public class SecurityConfiguration {
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/login", "/error", "/css/**", "/js/**", "/webjars/**").permitAll()
                 // Accesso solo ADMIN
-                .requestMatchers(HttpMethod.POST, "/relics/**", "/categories/**", "/universes/**").hasAuthority("ADMIN")
-                .requestMatchers(HttpMethod.DELETE, "/relics/**", "/categories/**", "/universes/**").hasAuthority("ADMIN")
-                .requestMatchers("/relics/create-or-edit", "/categories/create-or-edit", "/universes/create-or-edit").hasAuthority("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/relics/**", "/categories/**", "/universes/**").hasAuthority("ROLE_ADMIN")
+                .requestMatchers(HttpMethod.DELETE, "/relics/**", "/categories/**", "/universes/**").hasAuthority("ROLE_ADMIN")
+                .requestMatchers("/relics/create-or-edit", "/categories/create-or-edit", "/universes/create-or-edit").hasAuthority("ROLE_ADMIN")
                 // Lettura sia Admin che User
-                .requestMatchers(HttpMethod.GET, "/", "/index", "/relics/**", "/categories/**", "/universes/**").hasAnyAuthority("ADMIN", "USER")
+                .requestMatchers(HttpMethod.GET, "/", "/index", "/relics/**", "/categories/**", "/universes/**").hasAnyAuthority("ROLE_ADMIN", "ROLE_USER")
                 // Qualsiasi altra pagina
                 .anyRequest().authenticated()
             )   

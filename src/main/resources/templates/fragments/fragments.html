@@ -70,9 +70,9 @@
                     <div class="d-flex justify-content-between align-items-center mt-2">
                         <div class="btn-group btn-group-sm ms-auto" role="group">
                             <a th:href="@{${baseUrl} + '/' + ${item.id}}" class="btn btn-outline-primary btn-sm">Dettagli</a>
-                            <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/{baseUrl}/create-or-edit/{id}(id=${item.id})}"
+                            <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{${baseUrl} + '/' + 'create-or-edit' + '/' + ${item.id}}"
                                 class="btn btn-outline-secondary btn-sm">Modifica</a>
-                            <form sec:authorize="hasRole('ROLE_ADMIN')" th:action="@{/{baseUrl}/delete/{id}(id=${item.id})}" method="post" class="d-inline"
+                            <form sec:authorize="hasRole('ROLE_ADMIN')" th:action="@{${baseUrl} + '/' + 'delete' + '/' + ${item.id}}" method="post" class="d-inline"
                                 th:onsubmit="return confirm('Sei sicuro di voler procedere con la eliminazione');">
                                 <button type="submit" class="btn btn-sm btn-danger">Elimina</button>
                             </form>
@@ -87,10 +87,10 @@
     <div th:fragment="detail(item, baseUrl, showInfo)" class="card shadow-lg mx-3 my-4">
         <div class="row g-0">
             <!-- Colonna immagine mostrata solo se showImage=true (in relicDetails) -->
-            <div th:if="${showImage != null and showImage}" class="col-md-6">
+            <div th:if="${showInfo != null and showInfo}" class="col-12 col-md-6 d-flex align-items-center justify-content-center">
                 <img th:if="${showInfo}"
                 th:src="${item.imgUrl}" 
-                class="img-fluid rounded-start h-100" 
+                class="img-fluid rounded-start w-100" 
                 th:alt="${item.name}"
                 style="object-fit: cover; min-height: 300px;">
             </div>
@@ -98,7 +98,7 @@
             <!-- Se showImage=true col-md-6 -->
             <!-- Se showImage=false col-md-12 -->
             <div class="col-12"
-                th:classappend="${showImage != null and showImage ? 'col-md-6 d-flex justify-content-center' : ''}">
+                th:classappend="${showInfo != null and showInfo ? 'col-md-6' : ''}">
                 <div class="card-body p-4">
                     <a th:href="@{${baseUrl}}" class="btn btn-secondary mb-3">← Torna indietro</a>
                     <h2 class="card-title fw-bold mb-3" th:text="${item.name}">Nome item</h2>

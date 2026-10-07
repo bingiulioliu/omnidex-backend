@@ -16,5 +16,8 @@
         <h1>Universi</h1>
         <p class="lead">Esplora gli universi</p>
     </div>
+
+    <!-- Lista categorie -->
+    <div th:replace="~{fragments/fragments :: cardList(items=${universes}, showImage=false)}"></div>
 </body>
 </html>

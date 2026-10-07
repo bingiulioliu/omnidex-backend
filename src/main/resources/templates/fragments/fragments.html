@@ -67,7 +67,7 @@
                     <p class="card-text text-muted flex-grow-1" th:text="${item.description}">Descrizione item</p>
 
                     <!-- Bottoni azione -->
-                    <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div class="d-flex justify-content-between align-items-center mt-2">
                         <div class="btn-group btn-group-sm ms-auto" role="group">
                             <a th:href="@{/{items}/{id}(id=${item.id})}" class="btn btn-outline-primary btn-sm">Dettagli</a>
                             <a th:href="@{/{items}/create-or-edit/{id}(id=${item.id})}"

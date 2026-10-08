@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#4a2a1c"/>
+      <stop offset="100%" stop-color="#1c0f08"/>
+    </radialGradient>
+    <radialGradient id="ball" cx="38%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#ffe08a"/>
+      <stop offset="100%" stop-color="#e8680c"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <circle cx="150" cy="145" r="72" fill="url(#ball)" stroke="#b2440a" stroke-width="3"/>
+  <ellipse cx="128" cy="118" rx="18" ry="12" fill="#ffffff" opacity=".45"/>
+  <g fill="#ef4444">
+    <path transform="translate(150,104)" d="M0 -11 L3 -3 L11 0 L3 3 L0 11 L-3 3 L-11 0 L-3 -3 Z"/>
+    <path transform="translate(150,186)" d="M0 -11 L3 -3 L11 0 L3 3 L0 11 L-3 3 L-11 0 L-3 -3 Z"/>
+    <path transform="translate(100,145)" d="M0 -11 L3 -3 L11 0 L3 3 L0 11 L-3 3 L-11 0 L-3 -3 Z"/>
+    <path transform="translate(200,145)" d="M0 -11 L3 -3 L11 0 L3 3 L0 11 L-3 3 L-11 0 L-3 -3 Z"/>
+  </g>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Sfera del Drago ★4</text>
+</svg>

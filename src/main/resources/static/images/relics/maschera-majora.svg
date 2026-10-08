@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#4a3323"/>
+      <stop offset="100%" stop-color="#1a120b"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <path d="M150 58 L172 74 L192 64 L180 102 L186 128 C186 158 172 190 150 204 C128 190 114 158 114 128 L120 102 L108 64 L128 74 Z"
+        fill="#b45309" stroke="#7c3d06" stroke-width="4"/>
+  <circle cx="150" cy="122" r="6" fill="#0f0f12"/>
+  <circle cx="150" cy="122" r="12" fill="none" stroke="#fbbf24" stroke-width="3"/>
+  <circle cx="134" cy="112" r="19" fill="#fde047" stroke="#7c3d06" stroke-width="3"/>
+  <circle cx="166" cy="112" r="19" fill="#fde047" stroke="#7c3d06" stroke-width="3"/>
+  <circle cx="134" cy="112" r="6" fill="#111012"/>
+  <circle cx="166" cy="112" r="6" fill="#111012"/>
+  <path d="M150 132 L150 158" stroke="#7c3d06" stroke-width="4"/>
+  <path d="M134 152 L166 152" stroke="#7c3d06" stroke-width="3" opacity=".55"/>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Maschera di Majora</text>
+</svg>

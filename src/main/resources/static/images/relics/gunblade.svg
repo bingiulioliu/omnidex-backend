@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#3b2f33"/>
+      <stop offset="100%" stop-color="#191014"/>
+    </radialGradient>
+    <linearGradient id="blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#edf0f6"/>
+      <stop offset="100%" stop-color="#9aa7bd"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <g transform="rotate(-45 150 150)">
+    <rect x="143" y="52" width="14" height="150" fill="url(#blade)"/>
+    <polygon points="143,52 157,52 150,30" fill="url(#blade)"/>
+  </g>
+  <rect x="104" y="186" width="92" height="44" rx="8" fill="#6b7690" stroke="#3d4457" stroke-width="3"/>
+  <circle cx="118" cy="208" r="12" fill="#2b3040"/>
+  <circle cx="118" cy="208" r="5" fill="#5a6280"/>
+  <rect x="132" y="196" width="12" height="24" rx="2" fill="#3d4457"/>
+  <rect x="96" y="196" width="10" height="24" rx="3" fill="#3d4457"/>
+  <rect x="92" y="200" width="58" height="8" rx="3" fill="#20242f"/>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Gunblade di Squall</text>
+</svg>

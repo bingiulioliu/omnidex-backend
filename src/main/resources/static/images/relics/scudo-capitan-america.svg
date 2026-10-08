@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#38404f"/>
+      <stop offset="100%" stop-color="#161a22"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <circle cx="150" cy="145" r="86" fill="#c62828"/>
+  <circle cx="150" cy="145" r="58" fill="#f5f5f5"/>
+  <circle cx="150" cy="145" r="36" fill="#c62828"/>
+  <circle cx="150" cy="145" r="30" fill="#1e3a8a"/>
+  <polygon points="150,122 158,138 176,138 162,150 167,168 150,157 133,168 138,150 124,138 142,138" fill="#e5e7eb"/>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Scudo di Capitan America</text>
+</svg>

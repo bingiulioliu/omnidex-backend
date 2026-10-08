@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#4a3a22"/>
+      <stop offset="100%" stop-color="#1d160e"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <line x1="96" y1="96" x2="206" y2="204" stroke="#d97706" stroke-width="18" stroke-linecap="round"/>
+  <line x1="96" y1="96" x2="206" y2="204" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="86" cy="86" r="7" fill="#dc2626"/>
+  <circle cx="216" cy="214" r="7" fill="#dc2626"/>
+  <g fill="#f8fafc">
+    <circle cx="82" cy="104" r="16"/>
+    <circle cx="100" cy="90" r="15"/>
+    <circle cx="113" cy="104" r="14"/>
+    <circle cx="91" cy="111" r="16"/>
+  </g>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Bastone Nyoibo</text>
+</svg>

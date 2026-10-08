@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#3a2424"/>
+      <stop offset="100%" stop-color="#151011"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#a30f0f"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <polygon points="150,50 236,182 64,182" fill="#1c1e26" stroke="#ff5252" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="150" y1="50" x2="96" y2="182" stroke="#ff5252" stroke-width="2" opacity=".5"/>
+  <polygon points="150,92 208,168 92,168" fill="url(#core)" opacity=".9"/>
+  <polygon points="150,104 196,162 104,162" fill="#15171e"/>
+  <polygon points="150,120 186,156 114,156" fill="#ff5252" opacity=".65"/>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Olocron Sith</text>
+</svg>

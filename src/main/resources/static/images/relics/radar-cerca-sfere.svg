@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#24404a"/>
+      <stop offset="100%" stop-color="#101920"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <rect x="92" y="92" width="116" height="98" rx="14" fill="#0f1a26" stroke="#37d5a3" stroke-width="3"/>
+  <rect x="103" y="103" width="94" height="74" rx="6" fill="#c6f0dd"/>
+  <line x1="125" y1="103" x2="125" y2="177" stroke="#37d5a3" stroke-width="1.5"/>
+  <line x1="150" y1="103" x2="150" y2="177" stroke="#37d5a3" stroke-width="1.5"/>
+  <line x1="175" y1="103" x2="175" y2="177" stroke="#37d5a3" stroke-width="1.5"/>
+  <line x1="103" y1="127" x2="197" y2="127" stroke="#37d5a3" stroke-width="1.5"/>
+  <line x1="103" y1="151" x2="197" y2="151" stroke="#37d5a3" stroke-width="1.5"/>
+  <line x1="103" y1="151" x2="185" y2="103" stroke="#37d5a3" stroke-width="2" stroke-dasharray="4 3" opacity=".65"/>
+  <circle cx="125" cy="163" r="5.5" fill="#ff5252"/>
+  <circle cx="176" cy="115" r="5.5" fill="#ffd54f"/>
+  <circle cx="150" cy="140" r="5.5" fill="#8a5bff"/>
+  <circle cx="140" cy="164" r="4.5" fill="#36d1dc"/>
+  <rect x="132" y="196" width="36" height="9" rx="4" fill="#37d5a3"/>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Radar Cerca Sfere</text>
+</svg>

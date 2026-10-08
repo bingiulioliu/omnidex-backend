@@ -40,26 +40,26 @@ INSERT INTO categories (id, name, description) VALUES
 -- 3. RELIQUIE (relics: id, name, description, img_url, universe_id)
 -- -------------------------------------------------------------
 INSERT INTO relics (id, name, description, img_url, universe_id) VALUES 
-(1, 'Buster Sword', 'Iconico spadone brandito da Cloud Strife, lasciatogli in eredità da Zack Fair.', 'https://images.unsplash.com/photo-1595590424283-b8f17842773f', 1),
-(2, 'L''Unico Anello', 'Anello forgiato da Sauron nei fuochi del Monte Fato per dominare la Terra di Mezzo.', 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe', 2),
-(3, 'Radar Cerca Sfere', 'Dispositivo portatile inventato da Bulma per localizzare le magiche Sfere del Drago.', 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23', 3),
-(4, 'Mjolnir', 'Il martello incantato di Thor, forgiato dai nani nel cuore di una stella morente.', 'https://images.unsplash.com/photo-1568832359672-e36cf5d74f54', 4),
-(5, 'Spada Laser di Luke Skywalker', 'La leggendaria spada laser a lama verde costruita da Luke prima di diventare un vero Jedi.', 'https://images.unsplash.com/photo-1589241062272-c0a000072dfa', 5),
-(6, 'Gunblade di Squall', 'Insolita e letale combinazione tra una spada a lama lunga e un meccanismo a tamburo di rivoltella.', 'https://images.unsplash.com/photo-1595590424283-b8f17842773f', 1),
-(7, 'Pungolo (Sting)', 'Pugnale elfico ritrovato da Bilbo Baggins, la cui lama si illumina d''azzurro in presenza di orchi.', 'https://images.unsplash.com/photo-1595590424283-b8f17842773f', 2),
-(8, 'Bastone Nyoibo', 'Bastone magico estensibile, tramandato a Goku dal nonno adottivo Gohan.', 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23', 3),
-(9, 'Guanto dell''Infinito', 'Manufatto cosmico progettato per incanalare il potere simultaneo delle sei Gemme dell''Infinito.', 'https://images.unsplash.com/photo-1608889825103-7037d7c68696', 4),
-(10, 'Olocron Sith', 'Dispositivo tetraedrico contenente i segreti e gli antichi saperi del Lato Oscuro della Forza.', 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23', 5),
-(11, 'Spada Suprema (Master Sword)', 'La leggendaria spada che esorcizza il male, l''unica arma in grado di respingere Ganon.', 'https://images.unsplash.com/photo-1595590424283-b8f17842773f', 6),
-(12, 'Scudo Hylia', 'Il robustissimo scudo tradizionale dei cavalieri di Hyrule, leggendario per la sua resistenza.', 'https://images.unsplash.com/photo-1568832359672-e36cf5d74f54', 6),
-(13, 'Ocarina del Tempo', 'Strumento musicale magico in grado di manipolare il tempo e aprire il Portale del Tempo.', 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23', 6),
-(14, 'Lame del Caos', 'Coppia di spade forgiate negli inferi e incatenate per sempre alle braccia di Kratos.', 'https://images.unsplash.com/photo-1595590424283-b8f17842773f', 7),
-(15, 'Ascia Leviatano', 'Ascia da guerra forgiata dai nani Brok e Sindri, intrisa del potere magico del ghiaccio.', 'https://images.unsplash.com/photo-1595590424283-b8f17842773f', 7),
-(16, 'Sfera del Drago a Quattro Stelle', 'La preziosa sfera magica lasciata in eredità a Goku, considerata il suo tesoro più grande.', 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe', 3),
-(17, 'Scudo di Captain America', 'Disco in lega di vibranio, perfettamente bilanciato e virtualmente indistruttibile.', 'https://images.unsplash.com/photo-1568832359672-e36cf5d74f54', 4),
-(18, 'Elmo di Darth Vader', 'Sistema di supporto vitale ed iconico elmo oscuro che incute terrore in tutta la galassia.', 'https://images.unsplash.com/photo-1589241062272-c0a000072dfa', 5),
-(19, 'Maschera di Majora', 'Antico artefatto usato nei riti di tribù perdute, dotato di una tremenda volontà maligna.', 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23', 6),
-(20, 'Narsil (Andúril)', 'La leggendaria spada di Elendil, riforgiata per Aragorn con il nome di Fiamma dell''Ovest.', 'https://images.unsplash.com/photo-1595590424283-b8f17842773f', 2);
+(1, 'Buster Sword', 'Iconico spadone brandito da Cloud Strife, lasciatogli in eredità da Zack Fair.', '/images/relics/buster-sword.svg', 1),
+(2, 'L''Unico Anello', 'Anello forgiato da Sauron nei fuochi del Monte Fato per dominare la Terra di Mezzo.', '/images/relics/unico-anello.svg', 2),
+(3, 'Radar Cerca Sfere', 'Dispositivo portatile inventato da Bulma per localizzare le magiche Sfere del Drago.', '/images/relics/radar-cerca-sfere.svg', 3),
+(4, 'Mjolnir', 'Il martello incantato di Thor, forgiato dai nani nel cuore di una stella morente.', '/images/relics/mjolnir.svg', 4),
+(5, 'Spada Laser di Luke Skywalker', 'La leggendaria spada laser a lama verde costruita da Luke prima di diventare un vero Jedi.', '/images/relics/spada-laser.svg', 5),
+(6, 'Gunblade di Squall', 'Insolita e letale combinazione tra una spada a lama lunga e un meccanismo a tamburo di rivoltella.', '/images/relics/gunblade.svg', 1),
+(7, 'Pungolo (Sting)', 'Pugnale elfico ritrovato da Bilbo Baggins, la cui lama si illumina d''azzurro in presenza di orchi.', '/images/relics/pungolo.svg', 2),
+(8, 'Bastone Nyoibo', 'Bastone magico estensibile, tramandato a Goku dal nonno adottivo Gohan.', '/images/relics/bastone-nyoibo.svg', 3),
+(9, 'Guanto dell''Infinito', 'Manufatto cosmico progettato per incanalare il potere simultaneo delle sei Gemme dell''Infinito.', '/images/relics/guanto-infinito.svg', 4),
+(10, 'Olocron Sith', 'Dispositivo tetraedrico contenente i segreti e gli antichi saperi del Lato Oscuro della Forza.', '/images/relics/olocron-sith.svg', 5),
+(11, 'Spada Suprema (Master Sword)', 'La leggendaria spada che esorcizza il male, l''unica arma in grado di respingere Ganon.', '/images/relics/master-sword.svg', 6),
+(12, 'Scudo Hylia', 'Il robustissimo scudo tradizionale dei cavalieri di Hyrule, leggendario per la sua resistenza.', '/images/relics/scudo-hylia.svg', 6),
+(13, 'Ocarina del Tempo', 'Strumento musicale magico in grado di manipolare il tempo e aprire il Portale del Tempo.', '/images/relics/ocarina-del-tempo.svg', 6),
+(14, 'Lame del Caos', 'Coppia di spade forgiate negli inferi e incatenate per sempre alle braccia di Kratos.', '/images/relics/lame-del-caos.svg', 7),
+(15, 'Ascia Leviatano', 'Ascia da guerra forgiata dai nani Brok e Sindri, intrisa del potere magico del ghiaccio.', '/images/relics/ascia-leviatano.svg', 7),
+(16, 'Sfera del Drago a Quattro Stelle', 'La preziosa sfera magica lasciata in eredità a Goku, considerata il suo tesoro più grande.', '/images/relics/sfera-drago-4-stelle.svg', 3),
+(17, 'Scudo di Captain America', 'Disco in lega di vibranio, perfettamente bilanciato e virtualmente indistruttibile.', '/images/relics/scudo-capitan-america.svg', 4),
+(18, 'Elmo di Darth Vader', 'Sistema di supporto vitale ed iconico elmo oscuro che incute terrore in tutta la galassia.', '/images/relics/elmo-darth-vader.svg', 5),
+(19, 'Maschera di Majora', 'Antico artefatto usato nei riti di tribù perdute, dotato di una tremenda volontà maligna.', '/images/relics/maschera-majora.svg', 6),
+(20, 'Narsil (Andúril)', 'La leggendaria spada di Elendil, riforgiata per Aragorn con il nome di Fiamma dell''Ovest.', '/images/relics/narsil.svg', 2);
 
 -- -------------------------------------------------------------
 -- 4. TABELLA PONTE (category_relic: relic_id, category_id)

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#3a3a40"/>
+      <stop offset="100%" stop-color="#141416"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <path d="M150 56 C 206 56 224 96 222 124 L 214 150 L 186 150 L 188 176 L 112 176 L 114 150 L 86 150 L 78 124 C 76 96 94 56 150 56 Z"
+        fill="#d6dae1" stroke="#6f7683" stroke-width="3"/>
+  <path d="M150 92 C 178 92 190 116 188 132 L 150 132 L 112 132 C 110 116 122 92 150 92 Z" fill="#0f1012" stroke="#3a3d45" stroke-width="2"/>
+  <ellipse cx="120" cy="124" rx="14" ry="5" fill="#0f1012"/>
+  <ellipse cx="180" cy="124" rx="14" ry="5" fill="#0f1012"/>
+  <path d="M114 158 L 186 158 L 186 166 L 114 166 Z" fill="#2b2d33"/>
+  <rect x="126" y="200" width="14" height="10" rx="3" fill="#3d414a"/>
+  <rect x="160" y="200" width="14" height="10" rx="3" fill="#3d414a"/>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Elmo di Darth Vader</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#44251f"/>
+      <stop offset="100%" stop-color="#1a0d0a"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <path d="M96 118 C 140 96 192 100 208 118 C 160 106 122 116 100 132 Z" fill="#e15241" stroke="#7a1f13" stroke-width="3"/>
+  <path d="M204 160 C 162 182 110 178 94 162 C 138 176 172 168 196 150 Z" fill="#e15241" stroke="#7a1f13" stroke-width="3"/>
+  <circle cx="150" cy="142" r="9" fill="#d6b23a" stroke="#8a6a16" stroke-width="2"/>
+  <line x1="100" y1="128" x2="140" y2="196" stroke="#6b6f7a" stroke-width="4"/>
+  <line x1="200" y1="154" x2="162" y2="198" stroke="#6b6f7a" stroke-width="4"/>
+  <circle cx="138" cy="206" r="5" fill="none" stroke="#8a9096" stroke-width="3"/>
+  <circle cx="156" cy="210" r="5" fill="none" stroke="#8a9096" stroke-width="3"/>
+  <circle cx="140" cy="220" r="5" fill="none" stroke="#8a9096" stroke-width="3"/>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Lame del Caos</text>
+</svg>

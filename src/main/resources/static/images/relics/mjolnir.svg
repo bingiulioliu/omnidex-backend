@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#414b5c"/>
+      <stop offset="100%" stop-color="#1a1f29"/>
+    </radialGradient>
+    <linearGradient id="head" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c7cede"/>
+      <stop offset="100%" stop-color="#7c889e"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <rect x="80" y="78" width="140" height="58" rx="10" fill="url(#head)" stroke="#5c6780" stroke-width="3"/>
+  <polygon points="111,102 103,116 112,112 106,126" fill="#ffd54f"/>
+  <polygon points="186,100 178,114 187,110 181,124" fill="#ffd54f"/>
+  <rect x="143" y="136" width="14" height="74" rx="5" fill="#6e3b24" stroke="#4a2617" stroke-width="2"/>
+  <line x1="150" y1="146" x2="150" y2="158" stroke="#4a2617" stroke-width="2"/>
+  <line x1="150" y1="162" x2="150" y2="174" stroke="#4a2617" stroke-width="2"/>
+  <line x1="150" y1="178" x2="150" y2="190" stroke="#4a2617" stroke-width="2"/>
+  <rect x="132" y="210" width="36" height="9" rx="4" fill="#5c6780"/>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Mjolnir</text>
+</svg>

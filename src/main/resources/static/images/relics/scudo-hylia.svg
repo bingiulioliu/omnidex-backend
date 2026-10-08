@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#2e3f3f"/>
+      <stop offset="100%" stop-color="#12201f"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <path d="M150 42 C 210 42 238 96 226 150 C 214 206 174 240 150 246 C 126 240 86 206 74 150 C 62 96 90 42 150 42 Z"
+        fill="#1d4ed8" stroke="#fbbf24" stroke-width="7"/>
+  <path d="M150 96 L 200 74 L 186 112 Z" fill="#fbbf24"/>
+  <path d="M150 96 L 100 74 L 114 112 Z" fill="#fbbf24"/>
+  <path d="M150 96 L 172 108 L 150 122 L 128 108 Z" fill="#fbbf24"/>
+  <line x1="150" y1="124" x2="150" y2="150" stroke="#fbbf24" stroke-width="5"/>
+  <path d="M130 158 L150 190 L170 158 Z" fill="#fbbf24"/>
+  <circle cx="150" cy="112" r="6" fill="#fde68a"/>
+  <text x="150" y="283" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Scudo Hylia</text>
+</svg>

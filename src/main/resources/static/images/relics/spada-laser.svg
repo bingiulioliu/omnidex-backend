@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#26382b"/>
+      <stop offset="100%" stop-color="#0e1913"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <rect x="141" y="66" width="18" height="142" rx="9" fill="#46e06a" filter="url(#glow)"/>
+  <polygon points="143,64 157,64 150,44" fill="#46e06a" filter="url(#glow)"/>
+  <circle cx="150" cy="204" r="4" fill="#46e06a"/>
+  <rect x="130" y="206" width="40" height="52" rx="6" fill="#252a35" stroke="#46e06a" stroke-width="2"/>
+  <rect x="130" y="216" width="40" height="5" fill="#12151c"/>
+  <rect x="130" y="232" width="40" height="5" fill="#12151c"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Spada Laser di Luke</text>
+</svg>

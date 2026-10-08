@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#2c3a4a"/>
+      <stop offset="100%" stop-color="#121a24"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <rect x="145" y="78" width="10" height="112" fill="#79b8ff" filter="url(#glow)"/>
+  <polygon points="145,78 155,78 150,54" fill="#79b8ff" filter="url(#glow)"/>
+  <rect x="138" y="190" width="24" height="8" rx="3" fill="#caa53d"/>
+  <rect x="144" y="198" width="12" height="42" rx="3" fill="#1d2530"/>
+  <circle cx="150" cy="246" r="5" fill="#caa53d"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Pungolo (Sting)</text>
+</svg>

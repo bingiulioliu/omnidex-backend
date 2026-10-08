@@ -81,6 +81,17 @@
                                 </div>
                             </div>
 
+                            <!-- SELECT CATEGORIE  -->
+                            <div class="mb-3">
+                                <label class="form-label fw-bold d-block">Categorie</label>
+                                <div th:each="category : ${categories}" class="form-check">
+                                    <input type="checkbox" class="form-check-input" th:field="*{categories}"
+                                        th:value="${category.id}" th:id="'category' + ${category.id}">
+                                    <label class="form-check-label" th:for="'category' + ${category.id}"
+                                        th:text="${category.name}"></label>
+                                </div>
+                            </div>
+
                             <!-- Pulsanti di Azione -->
                             <div class="d-flex justify-content-between">
 
@@ -90,7 +101,7 @@
 
                                 <button type="submit" class="btn"
                                     th:classappend="${edit} ? 'btn-warning' : 'btn-success'"
-                                    th:text="${edit} ? 'Salva Modifiche' : 'Crea Offerta'">
+                                    th:text="${edit} ? 'Salva Modifiche' : 'Aggiungi reliquia'">
                                     Salva
                                 </button>
                             </div>

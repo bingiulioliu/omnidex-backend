@@ -6,7 +6,6 @@ import java.util.List;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -95,7 +94,7 @@ public class UniverseViewController {
     }
 
     // DELETE
-    @DeleteMapping ("/delete/{id}")
+    @PostMapping  ("/delete/{id}")
     public String delete (@PathVariable Integer id){
         relicService.deleteById(id);
         return "redirect:/universes";

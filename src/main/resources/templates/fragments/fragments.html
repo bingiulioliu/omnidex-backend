@@ -106,9 +106,9 @@
                     </p>
                     
                     <div class="d-flex justify-content-between align-items-center mt-3">
-                        <a th:href="@{${baseUrl} + '/' + 'edit/' + ${item.id}}"
-                            class="btn btn-outline-secondary btn-sm">Modifica</a>
-                        <form th:action="@{${baseUrl} + '/' + '/delete/' + ${item.id}}" method="post" class="d-inline"
+                        <a th:href="@{${baseUrl} + '/edit/' + ${item.id}}"
+                            class="btn btn-warning btn-sm">Modifica</a>
+                        <form th:action="@{${baseUrl} + '/delete/' + ${item.id}}" method="post" class="d-inline"
                             th:onsubmit="return confirm('Sei sicuro di voler procedere con la eliminazione');">
                             <button type="submit" class="btn btn-sm btn-danger">Elimina</button>
                         </form>
@@ -119,24 +119,24 @@
                         class="mt-4 pt-3 border-top">
                         <h5 class="fw-bold mb-3">Categorie associate</h5>
                         <div th:if="${#lists.isEmpty(relic.getCategories())}" class="text-muted small">
-                            Non ci sono offerte attive
+                            Non ci sono categorie associate
                         </div>
                         <div th:unless="${#lists.isEmpty(relic.getCategories())}"
                             class="d-flex justify-content-between align-items-center mt-3"
                             th:each="category : ${relic.getCategories()}">
-                            <span class="btn btn-outline-success" th:text="${category.name}"></span>
+                            <span class="btn btn-outline-secondary" th:text="${category.name}"></span>
                         </div>
                     </div>
+                    
                     <!-- Universo di appartenenza (solo per relics) -->
                     <div th:if="${showInfo}"
                         class="mt-4 pt-3 border-top">
                         <h5 class="fw-bold mb-3">Universo di appartenenza</h5>
-                        <div th:if="${relic.getUniverse() != null}" class="text-muted small">
+                        <div th:if="${relic.getUniverse() == null}" class="text-muted small">
                             Non è ancora stato associato un universo
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mt-3"
-                            th:text="${relic.getUniverse()}">
-                            <span class="btn btn-outline-success" th:text="${universe.name}"></span>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="btn btn-outline-secondary" th:text="${relic.getUniverse().name}"></span>
                         </div>
                     </div>
                 </div>

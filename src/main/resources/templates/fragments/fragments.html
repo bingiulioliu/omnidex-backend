@@ -70,7 +70,7 @@
                     <div class="d-flex justify-content-between align-items-center mt-2">
                         <div class="btn-group btn-group-sm ms-auto" role="group">
                             <a th:href="@{${baseUrl} + '/' + ${item.id}}" class="btn btn-outline-primary btn-sm">Dettagli</a>
-                            <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{${baseUrl} + '/' + 'create-or-edit' + '/' + ${item.id}}"
+                            <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{${baseUrl} + '/' + 'edit' + '/' + ${item.id}}"
                                 class="btn btn-outline-secondary btn-sm">Modifica</a>
                             <form sec:authorize="hasRole('ROLE_ADMIN')" th:action="@{${baseUrl} + '/' + 'delete' + '/' + ${item.id}}" method="post" class="d-inline"
                                 th:onsubmit="return confirm('Sei sicuro di voler procedere con la eliminazione');">
@@ -106,7 +106,7 @@
                     </p>
                     
                     <div class="d-flex justify-content-between align-items-center mt-3">
-                        <a th:href="@{${baseUrl} + '/' + '/create-or-edit/' + ${item.id}}"
+                        <a th:href="@{${baseUrl} + '/' + 'edit/' + ${item.id}}"
                             class="btn btn-outline-secondary btn-sm">Modifica</a>
                         <form th:action="@{${baseUrl} + '/' + '/delete/' + ${item.id}}" method="post" class="d-inline"
                             th:onsubmit="return confirm('Sei sicuro di voler procedere con la eliminazione');">

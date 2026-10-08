@@ -50,6 +50,7 @@ public class UniverseViewController {
     @GetMapping ("/create")
     public String create (Model model){
         model.addAttribute("universe", new Universe());
+        model.addAttribute("edit", false);
         return "universes/create-or-edit";
     }
 
@@ -61,6 +62,7 @@ public class UniverseViewController {
         Model model
     ){
         if (bindingResult.hasErrors()){
+            model.addAttribute("edit", false);
             return "universes/create-or-edit";
         }
         universeService.create(formUniverse);
@@ -71,6 +73,7 @@ public class UniverseViewController {
     @GetMapping ("/edit/{id}")
     public String edit (@PathVariable Integer id, Model model){
         model.addAttribute("universe", universeService.findById(id));
+        model.addAttribute("edit", true);
         return "universes/create-or-edit";
     }
 
@@ -83,6 +86,7 @@ public class UniverseViewController {
         Model model
     ){
         if (bindingResult.hasErrors()){
+            model.addAttribute("edit", true);
             return "universes/create-or-edit";
         }
 

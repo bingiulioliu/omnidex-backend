@@ -47,6 +47,7 @@ public class CategoryViewController {
     @GetMapping ("/create")
     public String create (Model model){
         model.addAttribute("category", new Category());
+        model.addAttribute("edit", false);
         return "categories/create-or-edit";
     }
 
@@ -58,6 +59,7 @@ public class CategoryViewController {
         Model model
     ){
         if (bindingResult.hasErrors()){
+            model.addAttribute("edit", false);
             return "categories/create-or-edit";
         }
         categoryService.create(formCategory);
@@ -68,6 +70,7 @@ public class CategoryViewController {
     @GetMapping ("/edit/{id}")
     public String edit (@PathVariable Integer id, Model model){
         model.addAttribute("category", categoryService.findById(id));
+        model.addAttribute("edit", true);
         return "categories/create-or-edit";
     }
 
@@ -80,6 +83,7 @@ public class CategoryViewController {
         Model model
     ){
         if (bindingResult.hasErrors()){
+            model.addAttribute("edit", true);
             return "categories/create-or-edit";
         }
 

@@ -68,6 +68,7 @@ public class RelicViewController {
         model.addAttribute("relic", new Relic());
         model.addAttribute("categories", categoryService.findAll());
         model.addAttribute("universes", universeService.findAll());
+        model.addAttribute("edit", false);
 
         return "relics/create-or-edit";
     }
@@ -83,6 +84,7 @@ public class RelicViewController {
             // Per renderizzare le select
             model.addAttribute("categories", categoryService.findAll());
             model.addAttribute("universes", universeService.findAll());
+            model.addAttribute("edit", false);
             return "relics/create-or-edit";
         }
         relicService.create(formRelic);
@@ -96,6 +98,7 @@ public class RelicViewController {
         model.addAttribute("relic", relicService.findById(id));
         model.addAttribute("categories", categoryService.findAll());
         model.addAttribute("universes", universeService.findAll());
+        model.addAttribute("edit", true);
 
         return "relics/create-or-edit";
     }
@@ -110,6 +113,7 @@ public class RelicViewController {
         if (bindingResult.hasErrors()){
             model.addAttribute("categories", categoryService.findAll());
             model.addAttribute("universes", universeService.findAll());
+            model.addAttribute("edit", true);
             return "relics/create-or-edit";        
         }
 

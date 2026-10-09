@@ -23,6 +23,9 @@ public class SecurityConfiguration {
             // Applico questa configurazione per le richieste che iniziano con /api
             .securityMatcher("/api/**")
 
+            // Abilito CORS
+            .cors(Customizer.withDefaults())
+
             // Disabilito csrf per le API REST
             .csrf(csrf -> csrf.disable())
 

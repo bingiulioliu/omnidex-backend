@@ -50,7 +50,7 @@ public class SecurityConfiguration {
     public SecurityFilterChain webSecurityFilterChain(HttpSecurity http) throws Exception{
         http
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/login", "/error", "/css/**", "/js/**", "/webjars/**").permitAll()
+                .requestMatchers("/login", "/error", "/css/**", "/js/**", "/webjars/**", "/images/**").permitAll()
                 // Accesso solo ADMIN
                 .requestMatchers(HttpMethod.POST, "/relics/**", "/categories/**", "/universes/**").hasAuthority("ROLE_ADMIN")
                 .requestMatchers(HttpMethod.DELETE, "/relics/**", "/categories/**", "/universes/**").hasAuthority("ROLE_ADMIN")

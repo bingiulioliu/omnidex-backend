@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#2a3040"/>
+      <stop offset="100%" stop-color="#0e121a"/>
+    </radialGradient>
+    <radialGradient id="skin" cx="42%" cy="34%" r="72%">
+      <stop offset="0%" stop-color="#e8bb92"/>
+      <stop offset="100%" stop-color="#b07a4c"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <path d="M118 58 q22 -18 46 -4 q-6 18 -4 30" fill="none" stroke="#d9c39a" stroke-width="9" stroke-linecap="round"/>
+  <path d="M112 66 q-20 -26 -40 -30 q20 -4 46 14" fill="#d9c39a" stroke="#a8926a" stroke-width="2"/>
+  <ellipse cx="150" cy="128" rx="58" ry="64" fill="url(#skin)" stroke="#8a5a34" stroke-width="3"/>
+  <path d="M96 150 q54 66 108 0 q-10 78 -54 86 q-44 -8 -54 -86 Z" fill="#cfd6dd" stroke="#9aa3ad" stroke-width="3"/>
+  <path d="M126 214 q24 22 48 0" stroke="#9aa3ad" stroke-width="3" fill="none"/>
+  <ellipse cx="128" cy="118" rx="11" ry="8" fill="#f8fafc"/>
+  <ellipse cx="172" cy="118" rx="11" ry="8" fill="#f8fafc"/>
+  <circle cx="128" cy="119" r="4.5" fill="#5b3a1a"/>
+  <circle cx="172" cy="119" r="4.5" fill="#5b3a1a"/>
+  <path d="M116 100 q12 -8 24 -2 M160 98 q12 -6 24 2" stroke="#8a5a34" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Testa di Mimir</text>
+</svg>

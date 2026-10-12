@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#4a1f33"/>
+      <stop offset="100%" stop-color="#150810"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#ff9ec4"/>
+      <stop offset="60%" stop-color="#e0336b"/>
+      <stop offset="100%" stop-color="#8f0d33"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <circle cx="150" cy="140" r="68" fill="url(#orb)" filter="url(#glow)"/>
+  <path d="M150 106 L184 128 L150 150 L116 128 Z" fill="#7a0a2a" opacity=".55"/>
+  <path d="M116 128 L92 116 L102 142 Z M184 128 L208 116 L198 142 Z" fill="#7a0a2a" opacity=".55"/>
+  <circle cx="150" cy="140" r="68" fill="none" stroke="#ff9ec4" stroke-width="2" opacity=".55"/>
+  <ellipse cx="126" cy="112" rx="18" ry="11" fill="#ffffff" opacity=".4"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Materia Evocazione Bahamut</text>
+</svg>

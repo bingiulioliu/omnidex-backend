@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#3a2a3a"/>
+      <stop offset="100%" stop-color="#140c14"/>
+    </radialGradient>
+    <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd9ee"/>
+      <stop offset="50%" stop-color="#ff7fc4"/>
+      <stop offset="100%" stop-color="#d63b96"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <g transform="rotate(-10 150 150)">
+    <rect x="52" y="126" width="196" height="44" rx="22" fill="url(#deck)" stroke="#9c1f6e" stroke-width="3"/>
+    <rect x="72" y="136" width="156" height="8" rx="4" fill="#ffffff" opacity=".55"/>
+    <circle cx="150" cy="148" r="9" fill="#ffffff" opacity=".65"/>
+  </g>
+  <ellipse cx="150" cy="188" rx="96" ry="12" fill="#ff7fc4" opacity=".5" filter="url(#glow)"/>
+  <ellipse cx="150" cy="200" rx="70" ry="7" fill="#ffd9ee" opacity=".3" filter="url(#glow)"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Tavola Hoverboard</text>
+</svg>

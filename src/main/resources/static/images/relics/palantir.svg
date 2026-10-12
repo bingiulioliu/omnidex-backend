@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#23303f"/>
+      <stop offset="100%" stop-color="#0a0f16"/>
+    </radialGradient>
+    <radialGradient id="stone" cx="38%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#4a5568"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </radialGradient>
+    <radialGradient id="fire" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#ffd27a"/>
+      <stop offset="100%" stop-color="#ff3d00"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <ellipse cx="150" cy="196" rx="62" ry="13" fill="#05070a" opacity=".65"/>
+  <circle cx="150" cy="118" r="72" fill="url(#stone)" stroke="#2b3444" stroke-width="2"/>
+  <ellipse cx="150" cy="120" rx="34" ry="23" fill="url(#fire)" opacity=".9"/>
+  <ellipse cx="150" cy="120" rx="9" ry="15" fill="#1a0d05"/>
+  <path d="M112 92 L124 78 L136 92 M188 92 L176 78 L164 92" stroke="#ffb347" stroke-width="3" fill="none" opacity=".7"/>
+  <path d="M108 186 L192 186 L182 202 L118 202 Z" fill="#b8860b" stroke="#7a5a08" stroke-width="2"/>
+  <rect x="138" y="202" width="24" height="10" rx="3" fill="#8a6810"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Palantír di Gondor</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#3a2f20"/>
+      <stop offset="100%" stop-color="#150f08"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <path d="M78 80 L214 80 Q222 80 222 88 L222 196 Q222 204 214 204 L78 204 Q70 204 70 196 L70 88 Q70 80 78 80 Z" fill="#6b3f1d" stroke="#3d2411" stroke-width="3"/>
+  <rect x="70" y="80" width="12" height="124" fill="#4a2a12"/>
+  <rect x="86" y="84" width="126" height="116" rx="4" fill="#e8dcc0"/>
+  <g stroke="#b9a884" stroke-width="2">
+    <line x1="96" y1="104" x2="202" y2="104"/>
+    <line x1="96" y1="124" x2="202" y2="124"/>
+    <line x1="96" y1="144" x2="202" y2="144"/>
+    <line x1="96" y1="164" x2="202" y2="164"/>
+    <line x1="96" y1="184" x2="202" y2="184"/>
+  </g>
+  <g fill="#c9962e">
+    <circle cx="100" cy="174" r="4"/>
+    <circle cx="130" cy="154" r="4"/>
+    <circle cx="160" cy="134" r="4"/>
+    <circle cx="190" cy="114" r="4"/>
+  </g>
+  <text x="150" y="100" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#6b3f1d">ALMANACCO</text>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Almanacco Sportivo</text>
+</svg>

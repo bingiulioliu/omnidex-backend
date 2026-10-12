@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#2f3a4a"/>
+      <stop offset="100%" stop-color="#0e141c"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe898"/>
+      <stop offset="100%" stop-color="#c9962e"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <path d="M96 70 Q150 34 204 70" fill="none" stroke="#b9c4d4" stroke-width="4" stroke-dasharray="6 6"/>
+  <path d="M96 70 Q90 78 96 86 M204 70 Q210 78 204 86" fill="none" stroke="#b9c4d4" stroke-width="4"/>
+  <circle cx="150" cy="150" r="62" fill="url(#gold)" stroke="#8a6208" stroke-width="4"/>
+  <circle cx="150" cy="150" r="48" fill="#1c2430" stroke="#8a6208" stroke-width="2"/>
+  <path d="M150 112 L158 138 L186 138 L163 154 L172 180 L150 164 L128 180 L137 154 L114 138 L142 138 Z" fill="url(#gold)" stroke="#8a6208" stroke-width="2"/>
+  <circle cx="150" cy="148" r="6" fill="#1c2430"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Amuleto di Talos</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#1b2a44"/>
+      <stop offset="100%" stop-color="#070d18"/>
+    </radialGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8e0ff"/>
+      <stop offset="100%" stop-color="#3f8fd8"/>
+    </linearGradient>
+    <linearGradient id="left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3f8fd8"/>
+      <stop offset="100%" stop-color="#1c4f8a"/>
+    </linearGradient>
+    <linearGradient id="right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f6fb4"/>
+      <stop offset="100%" stop-color="#12335e"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <g filter="url(#glow)">
+    <polygon points="150,54 214,92 150,130 86,92" fill="url(#top)"/>
+    <polygon points="86,92 150,130 150,206 86,168" fill="url(#left)"/>
+    <polygon points="214,92 214,168 150,206 150,130" fill="url(#right)"/>
+  </g>
+  <polygon points="150,54 214,92 150,130 86,92" fill="none" stroke="#d6f2ff" stroke-width="2" opacity=".7"/>
+  <circle cx="150" cy="140" r="20" fill="#d6f2ff" opacity=".35"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Cubo Cosmico (Tesseract)</text>
+</svg>

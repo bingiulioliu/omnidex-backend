@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#2a3a22"/>
+      <stop offset="100%" stop-color="#0e1509"/>
+    </radialGradient>
+    <linearGradient id="bean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b8f08a"/>
+      <stop offset="100%" stop-color="#4f9e2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <ellipse cx="150" cy="192" rx="78" ry="14" fill="#0a1006" opacity=".55"/>
+  <g transform="rotate(-18 150 140)">
+    <ellipse cx="150" cy="140" rx="66" ry="42" fill="url(#bean)" stroke="#3c7a22" stroke-width="3"/>
+    <path d="M92 132 C 122 116 178 116 208 132" stroke="#2f6119" stroke-width="3" fill="none" opacity=".6"/>
+    <path d="M100 152 C 126 164 174 164 200 152" stroke="#2f6119" stroke-width="3" fill="none" opacity=".45"/>
+    <ellipse cx="122" cy="120" rx="20" ry="10" fill="#ffffff" opacity=".4"/>
+  </g>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Seme dei Senzu</text>
+</svg>

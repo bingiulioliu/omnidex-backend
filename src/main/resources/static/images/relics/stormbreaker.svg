@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#2a3646"/>
+      <stop offset="100%" stop-color="#0d131c"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cfd8e6"/>
+      <stop offset="100%" stop-color="#77839a"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <rect x="142" y="120" width="16" height="128" rx="7" fill="#5a3f24" stroke="#3d2a17" stroke-width="2"/>
+  <path d="M84 148 L150 96 L216 148 L196 168 L150 132 L104 168 Z" fill="url(#metal)" stroke="#5c6780" stroke-width="3"/>
+  <path d="M150 96 L216 148 L216 176 L150 132 Z" fill="#9aa7bd" stroke="#5c6780" stroke-width="2"/>
+  <path d="M150 96 L84 148 L84 176 L150 132 Z" fill="url(#metal)" stroke="#5c6780" stroke-width="2"/>
+  <line x1="150" y1="112" x2="150" y2="150" stroke="#5c6780" stroke-width="2" opacity=".6"/>
+  <circle cx="150" cy="128" r="6" fill="#79b8ff"/>
+  <rect x="130" y="238" width="40" height="9" rx="4" fill="#9aa7bd"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Stormbreaker</text>
+</svg>

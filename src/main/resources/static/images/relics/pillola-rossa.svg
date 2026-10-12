@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#2a1f1f"/>
+      <stop offset="100%" stop-color="#0d0808"/>
+    </radialGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8a8a"/>
+      <stop offset="100%" stop-color="#c1121f"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7f9fd0"/>
+      <stop offset="100%" stop-color="#2c3f6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <ellipse cx="150" cy="196" rx="92" ry="14" fill="#050303" opacity=".55"/>
+  <g opacity=".4">
+    <path d="M92 168 a26 26 0 0 0 52 0 Z" fill="url(#blue)"/>
+    <path d="M92 168 a26 26 0 0 0 52 0" fill="none" stroke="#1b2748" stroke-width="2"/>
+  </g>
+  <g transform="rotate(-14 176 140)">
+    <path d="M176 104 a40 40 0 0 0 -46 58 a40 40 0 0 0 46 -58 Z" fill="url(#red)" stroke="#7a0a12" stroke-width="3"/>
+    <path d="M176 104 a40 40 0 0 0 -46 58" fill="none" stroke="#ffd0d0" stroke-width="3" opacity=".55"/>
+    <ellipse cx="150" cy="124" rx="12" ry="7" fill="#ffffff" opacity=".4"/>
+  </g>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Pillola Rossa</text>
+</svg>

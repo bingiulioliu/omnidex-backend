@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#24303a"/>
+      <stop offset="100%" stop-color="#0d141c"/>
+    </radialGradient>
+    <radialGradient id="lens" cx="42%" cy="36%" r="72%">
+      <stop offset="0%" stop-color="#bfe9ff"/>
+      <stop offset="100%" stop-color="#2f7bb0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <circle cx="136" cy="122" r="58" fill="url(#lens)" opacity=".85" filter="url(#glow)"/>
+  <circle cx="136" cy="122" r="58" fill="none" stroke="#caa53d" stroke-width="6"/>
+  <path d="M136 92 C 158 92 168 108 166 120 C 164 132 150 142 136 142 C 122 142 108 132 106 120 C 104 108 114 92 136 92 Z" fill="#0f1a26" opacity=".85"/>
+  <circle cx="136" cy="118" r="12" fill="#bfe9ff"/>
+  <circle cx="136" cy="118" r="5" fill="#0f1a26"/>
+  <rect x="180" y="150" width="14" height="70" rx="7" transform="rotate(32 187 185)" fill="#caa53d" stroke="#8a6a16" stroke-width="2"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Lente della Verità</text>
+</svg>

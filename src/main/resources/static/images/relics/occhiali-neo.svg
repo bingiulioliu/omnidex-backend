@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#0f2a14"/>
+      <stop offset="100%" stop-color="#04120a"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="84" fill="none" stroke="#ffffff14" stroke-width="2"/>
+  <g stroke="#46e06a" stroke-width="1.2" opacity=".28">
+    <line x1="92" y1="46" x2="92" y2="210"/>
+    <line x1="112" y1="40" x2="112" y2="214"/>
+    <line x1="132" y1="44" x2="132" y2="212"/>
+    <line x1="168" y1="44" x2="168" y2="212"/>
+    <line x1="188" y1="40" x2="188" y2="214"/>
+    <line x1="208" y1="46" x2="208" y2="210"/>
+  </g>
+  <path d="M74 138 q-16 4 -14 18" fill="none" stroke="#0d0f12" stroke-width="8" stroke-linecap="round"/>
+  <path d="M226 138 q16 4 14 18" fill="none" stroke="#0d0f12" stroke-width="8" stroke-linecap="round"/>
+  <rect x="74" y="108" width="152" height="66" rx="20" fill="#0d0f12" stroke="#2b2f36" stroke-width="3"/>
+  <rect x="88" y="120" width="54" height="42" rx="14" fill="#16211a" stroke="#2b2f36" stroke-width="2"/>
+  <rect x="158" y="120" width="54" height="42" rx="14" fill="#16211a" stroke="#2b2f36" stroke-width="2"/>
+  <path d="M84 132 q22 -12 44 0" stroke="#46e06a" stroke-width="3" fill="none" opacity=".55"/>
+  <path d="M172 132 q22 -12 44 0" stroke="#46e06a" stroke-width="3" fill="none" opacity=".55"/>
+  <rect x="142" y="128" width="16" height="10" rx="3" fill="#2b2f36"/>
+  <text x="150" y="282" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#ffffff7a">Occhiali da Sole di Neo</text>
+</svg>

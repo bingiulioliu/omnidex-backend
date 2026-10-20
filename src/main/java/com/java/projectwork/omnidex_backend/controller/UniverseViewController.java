@@ -96,7 +96,7 @@ public class UniverseViewController {
     // DELETE
     @PostMapping  ("/delete/{id}")
     public String delete (@PathVariable Integer id){
-        relicService.deleteById(id);
+        universeService.deleteById(id);
         return "redirect:/universes";
     }
 

@@ -21,12 +21,10 @@ import jakarta.validation.Valid;
 @RequestMapping ("/universes")
 public class UniverseViewController {
     
-    private final RelicService relicService;
     private final UniverseService universeService;
 
     public UniverseViewController (UniverseService universeService, RelicService relicService){
         this.universeService = universeService;
-        this.relicService = relicService;
     }
 
     // INDEX

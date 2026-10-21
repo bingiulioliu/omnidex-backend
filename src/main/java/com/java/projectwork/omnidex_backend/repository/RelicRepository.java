@@ -8,4 +8,5 @@ import com.java.projectwork.omnidex_backend.model.Relic;
 
 public interface RelicRepository extends JpaRepository<Relic, Integer> {
     public List<Relic> findByNameContainingIgnoringCase(String name);
+    boolean existsByNameIgnoreCase(String name);
 }

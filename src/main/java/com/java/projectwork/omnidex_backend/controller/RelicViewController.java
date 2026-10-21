@@ -78,6 +78,12 @@ public class RelicViewController {
         BindingResult bindingResult,
         Model model
     ){
+
+        // Check se nome esiste già
+        if (formRelic.getName() != null && relicService.existsByNameIgnoreCase(formRelic.getName().trim())) {
+            bindingResult.rejectValue("name", "error.duplicate", "Esiste già una reliquia con questo nome.");
+        }
+
         if (bindingResult.hasErrors()){
             // Ricarico le liste altrimenti altrimenti Model si svuota e ritorna null
             // Per renderizzare le select
